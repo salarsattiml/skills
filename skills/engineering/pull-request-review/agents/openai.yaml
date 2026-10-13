@@ -1,0 +1,5 @@
+interface:
+  display_name: "Pull Request Review"
+  short_description: "Review current branch changes against a base branch, by severity"
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Pull Request"
+  short_description: "Open a pull request using the github CLI"
+policy:
+  allow_implicit_invocation: false

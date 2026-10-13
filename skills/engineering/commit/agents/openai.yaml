@@ -1,0 +1,5 @@
+interface:
+  display_name: "Commit"
+  short_description: "Generate a short and long commit message optionally allows the user to commit (requires files to be manually staged)"
+policy:
+  allow_implicit_invocation: false
