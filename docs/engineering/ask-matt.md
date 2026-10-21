@@ -12,6 +12,7 @@ You invoke this by typing `/ask-matt`; the agent won't reach for it on its own.
 | --- | --- |
 | An idea, and no idea where to start | The head of the main flow, and whether the build is small enough to skip the spec |
 | Bugs and requests arriving from other people | The [triage](https://aihero.dev/skills-triage) on-ramp, and why [tickets](https://www.aihero.dev/ai-coding-dictionary/ticket) you generated yourself don't belong on it |
+| A Tailwind interface should follow Liberate's dark mode standard | [frontend-liberate](https://aihero.dev/skills-frontend-liberate) supplies theme values, Saans typography, and white logo assets to apply in the project's own styles; [prototype](https://aihero.dev/skills-prototype) helps when a UI direction needs to be seen before it can be settled |
 | Two skills that look interchangeable | The line between them, and it is usually one concrete test rather than a matter of taste. [grill-me](https://aihero.dev/skills-grill-me) or [grill-with-docs](https://aihero.dev/skills-grill-with-docs) turns on whether you are in a working directory; [grill-with-docs](https://aihero.dev/skills-grill-with-docs) or [wayfinder](https://aihero.dev/skills-wayfinder) turns on whether the effort fits one session |
 | A long session and a decision about the [context](https://www.aihero.dev/ai-coding-dictionary/context) | The ordered tree over the five options at a phase boundary |
 | A skill you have already picked | Nothing useful. Invoke that skill directly. |
@@ -54,7 +55,7 @@ People keep asking for one in the README. This skill is that list. A static tabl
 
 **It told me half the skills aren't installed.**
 
-This is a known bug, and it is not fixed. Most of the skills the router routes you through set `disable-model-invocation: true`, which means the harness leaves them out of the skill list it injects into the agent's context. The agent reads that list as exhaustive and reports them missing. In one reported session, it declared the whole spec-and-tickets flow absent and rerouted to bare `/grilling` and `/tdd`. Sixteen of the plugin's twenty-seven skills carry the flag, so this is the common case rather than an edge. They are installed. Type the slash command anyway, or check `.claude-plugin/plugin.json`, which is the authority on what is present.
+This is a known bug, and it is not fixed. Most of the skills the router routes you through set `disable-model-invocation: true`, which means the harness leaves them out of the skill list it injects into the agent's context. The agent reads that list as exhaustive and reports them missing. In one reported session, it declared the whole spec-and-tickets flow absent and rerouted to bare `/grilling` and `/tdd`. Sixteen of the plugin's twenty-eight skills carry the flag, so this is the common case rather than an edge. They are installed. Type the slash command anyway, or check `.claude-plugin/plugin.json`, which is the authority on what is present.
 
 **It described a skill's behaviour, and the skill doesn't do that.**
 

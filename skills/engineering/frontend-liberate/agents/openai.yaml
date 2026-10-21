@@ -1,0 +1,3 @@
+interface:
+  display_name: "Liberate Frontend"
+  short_description: "Apply Liberate's dark Tailwind CSS theme"
