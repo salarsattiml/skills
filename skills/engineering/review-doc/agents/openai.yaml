@@ -1,0 +1,5 @@
+interface:
+  display_name: "Review Doc"
+  short_description: "Write docs/tmp/review.md mapping uncommitted changes into review-ordered groups; fully staged files count as reviewed"
+policy:
+  allow_implicit_invocation: false

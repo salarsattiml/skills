@@ -16,7 +16,6 @@ Then do the following:
 1. **Summarize the changes** in plain English — what was added, changed, or removed and why. Keep it concise (one short paragraph). Focus on the _purpose_ of the changes, not just the file names.
 
 2. **Check branch name**
-
    Always show the current branch name: "We are commiting the changes to branch [current_branch]"
    - If the branch name does not match the nature of the changes, warn the user before proceeding:
      - ⚠️ **Warning:** The current branch (`<branch-name>`) doesn't seem to match the staged changes.
@@ -24,7 +23,11 @@ Then do the following:
      - Wait for confirmation before proceeding.
 
 3. **Stage any unstaged changes**
-   - If there are unstaged changes relevant to this commit, run `git add .` before committing.
+   - NEVER STAGE OR UNSTAGE CHANGES YOURSELF
+   - If it's obvious the code will not work with some files warn the user:
+     - ⚠️ **Warning:** The current files need to be changed
+     - Ask: "Do you want to continue anyway, or switch branches first?"
+     - Wait for confirmation before proceeding.
 
 4. **Present two commit message options** and ask the user to choose:
 

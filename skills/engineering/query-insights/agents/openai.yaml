@@ -1,0 +1,3 @@
+interface:
+  display_name: "Query Insights"
+  short_description: "Query the liberate nsights tool."
