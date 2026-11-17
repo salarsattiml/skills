@@ -1,9 +1,7 @@
 ---
-
-## name: query-insights
-
-description: Instructions for a coding agent to query the Insights tool. The insights API runs natural-language analytics over a tenant's conversation data and returns a markdown report. It is **asynchronous**: you submit a job, poll it until it finishes, then fetch the report. Reports are PII-scrubbed before they are returned.
-
+name: query-insights
+description: "Instructions for a coding agent to query the Insights tool. The insights API runs natural-language analytics over a tenant's conversation data and returns a markdown report. It is asynchronous: you submit a job, poll it until it finishes, then fetch the report. Reports are PII-scrubbed before they are returned."
+---
 ## At a glance
 
 | Step | Method & path | Returns |
